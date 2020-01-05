@@ -33,8 +33,7 @@ Shader "Shader/FixedFunctionShader_02"
             }
             //previous代表先前所有的纹理信息,结果为两次的混合 
             SetTexture[_SecondTex]{
-                //double(双倍光照参数) QUAD(四倍顶点光照参数) 
-                combine Texture *previous double
+                combine Texture *previous double//得到两次渲染的贴图材质
             }
         }
     }

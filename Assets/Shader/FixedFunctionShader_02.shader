@@ -10,6 +10,7 @@ Shader "Shader/FixedFunctionShader_02"
         _Emission("Emission",Color)=(1,1,1,1)
 
         _MainTex("MainTex",2D)=""
+        _SecondTex("SecondTex",2D  )=""
     }
     SubShader
     {
@@ -28,7 +29,12 @@ Shader "Shader/FixedFunctionShader_02"
             //primary代表之前计算好的所有光照参数 
             SetTexture[_MainTex]{
                 //double(双倍光照参数) QUAD(四倍顶点光照参数) 
-                combine texture *primary double
+                combine Texture *primary double
+            }
+            //previous代表先前所有的纹理信息,结果为两次的混合 
+            SetTexture[_SecondTex]{
+                //double(双倍光照参数) QUAD(四倍顶点光照参数) 
+                combine Texture *previous double
             }
         }
     }

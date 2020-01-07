@@ -4,10 +4,11 @@
     {
         Pass{
             CGPROGRAM
-// Upgrade NOTE: excluded shader from OpenGL ES 2.0 because it uses non-square matrices
-#pragma exclude_renderers gles
+            #include "../CGInclude/CGInclude.cginc"
+            #pragma exclude_renderers gles
             #pragma vertex vert
             #pragma fragment frag  
+            
             //获取场景物体信息
             struct Input{
                 float2 vertex :POSITION;//用模型空间的顶点坐标来填充vertex
@@ -30,13 +31,22 @@
                 }
                 else if(t.transPos.y>0){
                 	t.color= fixed4(1,1,0,1);
-                }else{
+                }
+                else{
                 	t.color= fixed4(0,0,1,1);
                 }
                 return t;
                 
             }
+            
             fixed4 frag(Trans t):SV_Target{
+            	//int i=0;
+            	//while(i<10){
+            	//	i++;
+            	//}
+            	//if(i==10)
+            	//t.color=float4 (0,0,0,1);
+            	Func(t.color);
         	    return t.color;
             }
             ENDCG

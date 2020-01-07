@@ -15,7 +15,7 @@ public class LuaTxtEditor {
         string strFilePath = AssetDatabase.GetAssetPath(EditorUtility.InstanceIDToObject(instanceID));
         string strFileName = System.IO.Directory.GetParent(Application.dataPath) + "/" + strFilePath;
 
-        if (strFileName.EndsWith(".shader")) {
+        if (strFileName.EndsWith(".shader")|| strFileName.EndsWith(".cginc")) {
             string strSublimeTextPath = Environment.GetEnvironmentVariable("SublimeText_Path");
             if (strSublimeTextPath != null && strSublimeTextPath.Length > 0) {
                 System.Diagnostics.Process process = new System.Diagnostics.Process();

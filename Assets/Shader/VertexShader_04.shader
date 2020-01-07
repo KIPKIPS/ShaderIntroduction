@@ -4,7 +4,9 @@
     {
         Pass{
             CGPROGRAM
-            #include "../CGInclude/CGInclude.cginc"
+            //引入函数列表
+            #include "Assets/CGInclude/CGInclude.cginc"
+            //#include "../CGInclude/CGInclude.cginc"
             #pragma exclude_renderers gles
             #pragma vertex vert
             #pragma fragment frag  

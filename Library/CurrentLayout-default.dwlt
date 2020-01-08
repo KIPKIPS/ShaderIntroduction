@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 394}
   m_MaxSize: {x: 22012, y: 14044}
   vertical: 0
-  controlID: 129
+  controlID: 127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 394}
   m_MaxSize: {x: 14008, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 105
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 272}
   m_MaxSize: {x: 14008, y: 10022}
   vertical: 0
-  controlID: 108
+  controlID: 106
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.0785604, y: 0.2592095, z: -0.9937545}
+    m_Target: {x: 1.584116, y: 1.2419403, z: -2.6702268}
     speed: 2
-    m_Value: {x: 5.0785604, y: 0.2592095, z: -0.9937545}
+    m_Value: {x: 1.584116, y: 1.2419403, z: -2.6702268}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -560,21 +560,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
+      m_Target: 0
       speed: 2
-      m_Value: 1
+      m_Value: 0
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.21502353, y: 0.24141115, z: -0.055004813, w: -0.944746}
+    m_Target: {x: -0.083022885, y: 0.27150106, z: -0.023554733, w: -0.9586143}
     speed: 2
-    m_Value: {x: -0.21501441, y: 0.2414009, z: -0.055002477, w: -0.9447059}
+    m_Value: {x: -0.08445639, y: 0.2714516, z: -0.023960816, w: -0.9584399}
   m_Size:
-    m_Target: 6.591019
+    m_Target: 6.85182
     speed: 2
-    m_Value: 6.307195
+    m_Value: 6.5567656
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -665,7 +665,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Shader
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
@@ -677,7 +677,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 0000000086300000f43000007a320000b63200009e330000a23300005e350000
+    m_ExpandedIDs: 0000000088300000f63000007c320000b8320000a0330000a433000060350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -705,18 +705,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 170}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000086300000f43000007a320000b63200009e330000a23300005e350000
+    m_ExpandedIDs: ffffffff0000000088300000f63000007c320000b8320000a0330000a433000060350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: t
-      m_OriginalName: t
+      m_Name: CelShader
+      m_OriginalName: CelShader
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14018
+      m_UserData: 14036
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

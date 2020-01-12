@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 394}
   m_MaxSize: {x: 22012, y: 14044}
   vertical: 0
-  controlID: 74
+  controlID: 127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 394}
   m_MaxSize: {x: 14008, y: 14044}
   vertical: 1
-  controlID: 75
+  controlID: 105
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 272}
   m_MaxSize: {x: 14008, y: 10022}
   vertical: 0
-  controlID: 76
+  controlID: 106
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,9 +411,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aa010000
+      m_SelectedIDs: 98310000
       m_LastClickedID: 0
-      m_ExpandedIDs: 78fbffff
+      m_ExpandedIDs: 2af8ffff80f8ffffbcf8ffff78fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.584116, y: 1.2419403, z: -2.6702268}
+    m_Target: {x: 1.6201667, y: 1.2308942, z: -2.841423}
     speed: 2
-    m_Value: {x: 1.584116, y: 1.2419403, z: -2.6702268}
+    m_Value: {x: 1.6201667, y: 1.2308942, z: -2.841423}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -560,21 +560,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.083022885, y: 0.27150106, z: -0.023554733, w: -0.9586143}
+    m_Target: {x: -0.1844349, y: 0.31367812, z: -0.06226786, w: -0.92942}
     speed: 2
-    m_Value: {x: -0.083022885, y: 0.27150106, z: -0.023554733, w: -0.95861435}
+    m_Value: {x: -0.18461084, y: 0.31087154, z: -0.06171092, w: -0.93030626}
   m_Size:
-    m_Target: 6.85182
+    m_Target: 19.487986
     speed: 2
-    m_Value: 6.85182
+    m_Value: 18.64879
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -665,7 +665,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Shader
+    - Assets/CGInclude
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
@@ -702,21 +702,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 170}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008a300000f83000007e320000ba320000a2330000a633000062350000
+    m_ExpandedIDs: ffffffff000000008a300000f8300000943100007e320000ba320000a2330000a633000062350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: VertexShader_02
-      m_OriginalName: VertexShader_02
+      m_Name: VertexShader_05
+      m_OriginalName: VertexShader_05
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 426
+      m_UserData: 14310
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

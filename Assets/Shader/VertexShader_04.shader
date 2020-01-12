@@ -48,7 +48,7 @@
             	//}
             	//if(i==10)
             	//t.color=float4 (0,0,0,1);
-            	Func(t.color);
+            	Func_01(t.color);
         	    return t.color;
             }
             ENDCG

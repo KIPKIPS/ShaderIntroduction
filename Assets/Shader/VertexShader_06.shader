@@ -18,8 +18,8 @@ Shader "Shader/VertexShader_06"
             
             VertToFrag Vert(appdata_base adb){
                 VertToFrag vtf;
-                vtf.pos=mul(UNITY_MATRIX_MVP,adb.vertex)
-                //vtf.pos=UnityObjectToClipPos(adb.vertex );
+                //vtf.pos=mul(UNITY_MATRIX_MVP,adb.vertex)
+                vtf.pos=UnityObjectToClipPos(adb.vertex );
                 return vtf;
             }
             float4 Frag(VertToFrag vtf):COLOR{

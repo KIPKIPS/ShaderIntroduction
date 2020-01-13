@@ -11,7 +11,7 @@ Shader "Shader/VertexShader_06"
             #pragma vertex Vert
             #pragma fragment Frag 
 
-            uniform float4x4 mvp;
+             float4x4 mvp;
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION ;
@@ -24,8 +24,8 @@ Shader "Shader/VertexShader_06"
                 vtf.pos=mul(mvp,adb.vertex );
                 return vtf;
             }
-            float4 Frag(VertToFrag vtf):COLOR{
-                return float4(1,1,1,1);
+            float4 Frag():COLOR{
+                return float4(1,0,0,1);
             }
             ENDCG
         }

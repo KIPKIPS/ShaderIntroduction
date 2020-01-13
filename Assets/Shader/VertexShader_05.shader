@@ -37,7 +37,8 @@
             }
             float4 Frag(VertToFrag vtf):COLOR{
                 //return vtf.col;
-                return _MainColor*_SecondColor;
+                //return _MainColor*0.5+_SecondColor*0.5;
+                return lerp(_MainColor,_SecondColor,0.5);//参数代表后一个颜色的比例
             }
             ENDCG
         }

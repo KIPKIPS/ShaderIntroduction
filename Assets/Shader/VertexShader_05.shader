@@ -1,5 +1,9 @@
 ﻿Shader "Shader/VertexShader_05"
 {
+    Properties{
+        _MainColor("Main Color",Color)=(1,0.5,0.5,1)
+    }
+
     SubShader
     {
         Pass{
@@ -7,6 +11,10 @@
             #include "../CGInclude/CGInclude.cginc"
             #pragma vertex Vert
             #pragma fragment Frag 
+
+            float4 _MainColor;
+            uniform float4 _SecondColor;//这个变量由应用程序提供,默认零值
+
             //输入结构体
             struct Input{
                 float2 pos:POSITION;
@@ -27,8 +35,9 @@
                 vtf.col=input.col;
                 return vtf;
             }
-            float4  Frag(VertToFrag vtf):COLOR{
-                return vtf.col;
+            float4 Frag(VertToFrag vtf):COLOR{
+                //return vtf.col;
+                return _MainColor*_SecondColor;
             }
             ENDCG
         }

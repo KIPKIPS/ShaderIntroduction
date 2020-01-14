@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MVPTransform.cs" />
+    <Compile Include="Assets\Scripts\SetFloat.cs" />
     <Compile Include="Assets\Scripts\Uniform.cs" />
     <None Include="Assets\Shader\VertexShader_08.shader" />
     <None Include="Assets\Shader\VertexShader_01.shader" />
@@ -76,6 +77,7 @@
     <None Include="Assets\Shader\FixedFunctionShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_04.shader" />
     <None Include="Assets\Shader\SurfaceShader_01.shader" />
+    <None Include="Assets\Shader\VertexShader_09.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity_WorkStation/ShaderStudy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

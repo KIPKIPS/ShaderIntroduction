@@ -21,12 +21,23 @@ Shader "Shader/VertexShader_08"
                 float4x4 unityMVP=UNITY_MATRIX_MVP;
                 vtf.pos=mul(unityMVP,adb.vertex);
 
-                float x=vtf.pos.x/vtf.pos.w;
-                if(x<0){
+                float x=vtf.pos.x/vtf.pos.w;//屏幕坐标
+                //example_01,中间变色
+                //if(x<0){
+                //    vtf.color=float4 (1,0,0,1);
+                //}
+                //else{
+                //    vtf.color=float4 (0,0,1,1);
+                //}
+                //example_02,两端变色,中间基于坐标进行灰度变换
+                if(x<=-1){
                     vtf.color=float4 (1,0,0,1);
                 }
-                else{
+                else if(x>=1){
                     vtf.color=float4 (0,0,1,1);
+                }
+                else{
+                    vtf.color=float4 (x/2+0.5,x/2+0.5,x/2+0.5,1);
                 }
                 return vtf;
             }

@@ -1,17 +1,16 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Shader/VertexShader_06"
+﻿Shader "Shader/VertexShader_06"
 {
 
     SubShader
     {
         Pass{
             CGPROGRAM
-            #include "unitycg.cginc"
+            #include "UnityCG.cginc"
             #pragma vertex Vert
             #pragma fragment Frag 
 
              float4x4 mvp;
+             float4x4 rm;
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION ;
@@ -19,9 +18,14 @@ Shader "Shader/VertexShader_06"
             
             VertToFrag Vert(appdata_base adb){
                 VertToFrag vtf;
+                //float4x4 m=mul(mvp,rm);//先将UNITY_MATRIX_MVP和变换矩阵相乘
+                float4x4 unityMVP=UNITY_MATRIX_MVP;//先将UNITY_MATRIX_MVP矩阵赋值给新矩阵m,否则Unity会自动将mul函数替换成UnityObjectToClipPos函数
+                float4x4 m=mul(unityMVP,rm);
+                //得到变换矩阵在屏幕空间的投影位置
+
                 //vtf.pos=mul(UNITY_MATRIX_MVP,adb.vertex)
                 //vtf.pos=UnityObjectToClipPos(adb.vertex );
-                vtf.pos=mul(mvp,adb.vertex );
+                vtf.pos=mul(m,adb.vertex);
                 return vtf;
             }
             float4 Frag():COLOR{

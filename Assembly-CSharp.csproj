@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\MVPTransform.cs" />
     <Compile Include="Assets\Scripts\SetFloat.cs" />
     <Compile Include="Assets\Scripts\Uniform.cs" />
+    <Compile Include="Assets\Scripts\Water.cs" />
     <None Include="Assets\Shader\VertexShader_10.shader" />
     <None Include="Assets\Shader\VertexShader_08.shader" />
     <None Include="Assets\Shader\VertexShader_01.shader" />

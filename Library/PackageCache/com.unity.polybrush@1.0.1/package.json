@@ -1,0 +1,40 @@
+{
+  "name": "com.unity.polybrush",
+  "displayName": "Polybrush",
+  "version": "1.0.1",
+  "unity": "2018.3",
+  "description": "Mesh painting, sculpting, and geo-scattering tool for Unity.",
+  "keywords": [
+    "modeling",
+    "sculpting",
+    "push",
+    "clay",
+    "terrain"
+  ],
+  "samples": [
+    {
+      "displayName": "Shader Examples (Standard)",
+      "description": "Polybrush shader examples compatible with Unity Standard rendering pipeline.",
+      "path": "Samples~/SamplesStandard"
+    },
+    {
+      "displayName": "Shader Examples (LWRP)",
+      "description": "Polybrush shader examples compatible with Unity Lightweight rendering pipeline.",
+      "path": "Samples~/SamplesLWRP"
+    },
+    {
+      "displayName": "Shader Examples (HDRP)",
+      "description": "Polybrush shader examples compatible with Unity High Definition rendering pipeline.",
+      "path": "Samples~/SamplesHDRP"
+    }
+  ],
+  "dependencies": {
+    "com.unity.settings-manager": "1.0.0"
+  },
+  "relatedPackages": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Unity-Technologies/polybrush.git",
+    "revision": "d82132405506193bb9aeedb535f9e22c96fe9447"
+  }
+}

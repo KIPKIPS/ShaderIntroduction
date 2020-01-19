@@ -1,11 +1,15 @@
 ﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 Shader "Shader/VertexShader_12"
 {
     SubShader
     {
         Pass{
-        	Tags { "LightMode"="ForwardBase" }
+        	Tags { "LightMode"="ForwardBase" }//光照模式
             CGPROGRAM
             #include "UnityCG.cginc"
             #include "lighting.cginc"
@@ -24,6 +28,12 @@ Shader "Shader/VertexShader_12"
                 vtf.pos=mul(unityMVP,v.vertex);
                 float3 N=normalize(v.normal);//模型的法向量
                 float3 L=normalize(_WorldSpaceLightPos0);
+                //将法线向量和光照向量转移到一个坐标系下
+                //1.光照向量转移到模型空间坐标系
+                //L=mul(unity_WorldToObject,float4(L,0)).xyz;
+
+                //2.法线向量转移到世界空间坐标系
+                N=mul(unity_ObjectToWorld,float4(N,0)).xyz;
 
                 float NDotL=saturate(dot(N,L));//将顶点指向光源向量和法线向量的点积值限定在0-1之间
                 vtf.color=_LightColor0*NDotL;//_lightingColor0是光源的颜色

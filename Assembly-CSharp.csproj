@@ -69,6 +69,7 @@
     <None Include="Assets\Shader\VertexShader_11.shader" />
     <None Include="Assets\Shader\VertexShader_10.shader" />
     <None Include="Assets\Shader\VertexShader_08.shader" />
+    <None Include="Assets\Shader\VertexShader_12.shader" />
     <None Include="Assets\Shader\VertexShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_03.shader" />
     <None Include="Assets\Shader\VertexShader_07.shader" />

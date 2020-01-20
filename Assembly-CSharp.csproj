@@ -78,6 +78,7 @@
     <None Include="Assets\Shader\FixedFunctionShader_02.shader" />
     <None Include="Assets\Shader\VertexShader_06.shader" />
     <None Include="Assets\Shader\VertexShader_05.shader" />
+    <None Include="Assets\Shader\VertexShader_13.shader" />
     <None Include="Assets\Shader\FixedFunctionShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_04.shader" />
     <None Include="Assets\Shader\SurfaceShader_01.shader" />

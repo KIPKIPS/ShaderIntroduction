@@ -1,4 +1,6 @@
-﻿Shader "Shader/VertexShader_12"
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+Shader "Shader/VertexShader_12"
 {
     SubShader
     {
@@ -7,6 +9,7 @@
             CGPROGRAM
             #include "UnityCG.cginc"
             #include "lighting.cginc"
+            #include "UnityShaderVariables.cginc"//unity自带变量
             #pragma vertex Vert
             #pragma fragment Frag  
 
@@ -33,8 +36,14 @@
 
                 float NDotL=saturate(dot(N,L));//将顶点指向光源向量和法线向量的点积值限定在0-1之间
                 vtf.color=_LightColor0*NDotL;//_lightingColor0是光源的颜色
+                //参数详见unitycg.cginc
+                vtf.color.rgb+=Shade4PointLights(unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0,
+                                                 unity_LightColor[0].rgb, unity_LightColor[1].rgb, unity_LightColor[2].rgb, 
+                                                 unity_LightColor[3].rgb,unity_4LightAtten0,mul(unity_ObjectToWorld,v.vertex).xyz, N
+                                                 );
                 return vtf;
             }
+
             float4 Frag(VertToFrag vtf):COLOR{
                 return vtf.color+UNITY_LIGHTMODEL_AMBIENT;//漫反射+环境光
             }

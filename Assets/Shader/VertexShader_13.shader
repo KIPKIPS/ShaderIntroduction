@@ -10,20 +10,23 @@
             #pragma vertex Vert
             #pragma fragment Frag  
 
-         
+            //appdata_base包含:顶点坐标vertex,顶点法线normal,第一组纹理坐标TEXCOORD0
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION ;
                 float4 color:COLOR;
                 float3 normal:NORMAL;
             };
+            //顶点程序
             VertToFrag Vert(appdata_base v){
                 VertToFrag vtf;
                 float4x4 unityMVP=UNITY_MATRIX_MVP;
-                vtf.pos=mul(unityMVP,v.vertex);
+                vtf.pos=mul(unityMVP,v.vertex);//计算模型顶点坐标在世界空间的坐标
                 vtf.normal=v.normal;
                 return vtf;
             }
+
+            
             //将光照计算放在片元程序中会优化渲染的结果
             float4 Frag(VertToFrag vtf):COLOR{
                 float3 N=normalize(vtf.normal);//模型的法向量

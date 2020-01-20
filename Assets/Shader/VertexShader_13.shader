@@ -1,10 +1,4 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
-// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
-
-// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
-Shader "Shader/VertexShader_13"
+﻿Shader "Shader/VertexShader_13"
 {
     SubShader
     {
@@ -30,6 +24,7 @@ Shader "Shader/VertexShader_13"
                 vtf.normal=v.normal;
                 return vtf;
             }
+            //将光照计算放在片元程序中会优化渲染的结果
             float4 Frag(VertToFrag vtf):COLOR{
                 float3 N=normalize(vtf.normal);//模型的法向量
                 float3 L=normalize(_WorldSpaceLightPos0);

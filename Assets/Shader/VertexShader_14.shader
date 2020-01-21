@@ -1,7 +1,11 @@
 ﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
-Shader "Shader/VertexShader_12"
+Shader "Shader/VertexShader_14"
 {
+    Properties{
+        _SpecularColor("SpecularColor",Color)=(1,1,1,1)
+        _Shininess("Shininess",range(1,64))=8
+    }
     SubShader
     {
         Pass{
@@ -13,7 +17,8 @@ Shader "Shader/VertexShader_12"
             #pragma vertex Vert
             #pragma fragment Frag  
 
-         
+            float4 _SpecularColor; 
+            float _Shininess;        
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION ;
@@ -25,22 +30,21 @@ Shader "Shader/VertexShader_12"
                 vtf.pos=mul(unityMVP,v.vertex);
                 float3 N=normalize(v.normal);//模型的法向量
                 float3 L=normalize(_WorldSpaceLightPos0);
-                //将法线向量和光照向量转移到一个坐标系下
-                //1.光照向量转移到模型空间坐标系
-                //L=normalize(mul(unity_WorldToObject,float4(L,0)).xyz);
+                //N=normalize(mul(float4(N,0),unity_WorldToObject).xyz);
+                N=UnityObjectToWorldNormal(N);//将法向量变换到世界空间坐标系
 
-                //2.法线向量转移到世界空间坐标系
-                //N=mul(unity_ObjectToWorld,float4(N,0)).xyz;//unity_ObjectToWorld的逆矩阵unity_WorldToObject
-                //交换mul函数里面矩阵和向量的位置,相当于乘原矩阵的转置矩阵
-                N=normalize(mul(float4(N,0),unity_WorldToObject).xyz);
-
+                //Diffuse color
                 float NDotL=saturate(dot(N,L));//将顶点指向光源向量和法线向量的点积值限定在0-1之间
                 vtf.color=_LightColor0*NDotL;//_lightingColor0是光源的颜色
-                //参数详见unitycg.cginc
-                vtf.color.rgb+=Shade4PointLights(unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0,
-                                                 unity_LightColor[0].rgb, unity_LightColor[1].rgb, unity_LightColor[2].rgb, 
-                                                 unity_LightColor[3].rgb,unity_4LightAtten0,mul(unity_ObjectToWorld,v.vertex).xyz, N
-                                                 );
+
+                //Specular color
+                float3 I=-WorldSpaceLightDir(v.vertex);//计算入射光向量,世界空间的顶点坐标-光源坐标
+                float3 R=reflect(I,N);
+                float3 V=WorldSpaceViewDir(v.vertex);//顶点指向摄像机的位置,摄像机位置-顶点坐标
+                R=normalize(R);
+                V=normalize(V);
+                float specularScale=pow(saturate(dot(R,V)),_Shininess);
+                vtf.color.rgb+=_LightColor0*specularScale;
                 return vtf;
             }
 

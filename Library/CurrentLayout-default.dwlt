@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -413,7 +413,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 76fbffff
+      m_ExpandedIDs: c0efffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.4196696, y: 0.76372707, z: -2.2265267}
+    m_Target: {x: 3.570678, y: 2.1612787, z: -1.2466904}
     speed: 2
-    m_Value: {x: 2.4196696, y: 0.76372707, z: -2.2265267}
+    m_Value: {x: 3.570678, y: 2.1612787, z: -1.2466904}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -568,13 +568,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.15434004, y: 0.73693115, z: -0.17963251, w: -0.63314056}
+    m_Target: {x: -0.09657482, y: 0.7459978, z: -0.11091424, w: -0.64953804}
     speed: 2
-    m_Value: {x: -0.15433826, y: 0.7369226, z: -0.17963044, w: -0.63313323}
+    m_Value: {x: -0.098050125, y: 0.74288553, z: -0.11159076, w: -0.65272874}
   m_Size:
-    m_Target: 4.592575
+    m_Target: 3.5595684
     speed: 2
-    m_Value: 4.592575
+    m_Value: 3.2595685
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -701,24 +701,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 410}
+    scrollPos: {x: 0, y: 660}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000005c340000103500007c390000543c0000
+    m_ExpandedIDs: ffffffff000000005c34000010350000fa3500007c390000543c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: VertexShader_14
+      m_OriginalName: VertexShader_14
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 16010
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 

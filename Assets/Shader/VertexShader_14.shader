@@ -44,7 +44,7 @@ Shader "Shader/VertexShader_14"
                 R=normalize(R);
                 V=normalize(V);
                 float specularScale=pow(saturate(dot(R,V)),_Shininess);
-                vtf.color.rgb+=_LightColor0*specularScale;
+                vtf.color.rgb+=_SpecularColor*specularScale;
                 return vtf;
             }
 

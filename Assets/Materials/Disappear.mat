@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MyMaterial_19
-  m_Shader: {fileID: 4800000, guid: 97e91370f4da61e4e8d01d953b12f52e, type: 3}
+  m_Name: Disappear
+  m_Shader: {fileID: 4800000, guid: cd0f9d1f2bd08604fb86c3b1253dc6c4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 52972f61f1f6219429f207074207aed2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -59,6 +59,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DisappearOffset: 0.5
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5

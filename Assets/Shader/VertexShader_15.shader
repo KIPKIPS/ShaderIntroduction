@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
-Shader "Shader/VertexShader_14"
+Shader "Shader/VertexShader_15"
 {
     Properties{
         _SpecularColor("SpecularColor",Color)=(1,1,1,1)
@@ -29,7 +29,7 @@ Shader "Shader/VertexShader_14"
                 float4x4 unityMVP=UNITY_MATRIX_MVP;
                 vtf.pos=mul(unityMVP,v.vertex);
                 float3 N=normalize(v.normal);//模型的法向量
-                float3 L=normalize(_WorldSpaceLightPos0);
+                float3 L=normalize(WorldSpaceLightDir(v.vertex));
                 //Ambient color环境光
                 vtf.color=UNITY_LIGHTMODEL_AMBIENT;
                 //N=normalize(mul(float4(N,0),unity_WorldToObject).xyz);
@@ -40,14 +40,11 @@ Shader "Shader/VertexShader_14"
                 vtf.color+=_LightColor0*NDotL;//_lightingColor0是光源的颜色
 
                 //Specular color镜面高光
-                float3 I=-WorldSpaceLightDir(v.vertex);//计算入射光向量,世界空间的顶点坐标-光源坐标
-                //float3 R=reflect(I,N);
-                float3 R=2*dot(N,L)*N-L;
-                float3 V=WorldSpaceViewDir(v.vertex);//顶点指向摄像机的位置,摄像机位置-顶点坐标
-                R=normalize(R);
-                V=normalize(V);
-                float specularScale=pow(saturate(dot(R,V)),_Shininess);
-                vtf.color.rgb+=_SpecularColor*specularScale;
+                
+                float3 V=normalize(WorldSpaceViewDir(v.vertex));//顶点指向摄像机的位置,摄像机位置-顶点坐标
+                float3 H=normalize(L+V);//半角向量
+                float specularScale=pow(saturate(dot(N,H)),_Shininess);
+                vtf.color.rgb+=_SpecularColor.rgb*specularScale;
                 return vtf;
             }
 

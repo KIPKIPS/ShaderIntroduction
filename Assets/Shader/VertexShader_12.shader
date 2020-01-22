@@ -24,7 +24,7 @@ Shader "Shader/VertexShader_12"
                 float4x4 unityMVP=UNITY_MATRIX_MVP;
                 vtf.pos=mul(unityMVP,v.vertex);
                 float3 N=normalize(v.normal);//模型的法向量
-                float3 L=normalize(_WorldSpaceLightPos0);
+                float3 L=normalize(WorldSpaceLightDir(v.vertex));//世界坐标的光源指向顶点的向量
                 //将法线向量和光照向量转移到一个坐标系下
                 //1.光照向量转移到模型空间坐标系
                 //L=normalize(mul(unity_WorldToObject,float4(L,0)).xyz);

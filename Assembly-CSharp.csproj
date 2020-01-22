@@ -73,6 +73,7 @@
     <None Include="Assets\Shader\VertexShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_03.shader" />
     <None Include="Assets\Shader\VertexShader_07.shader" />
+    <None Include="Assets\Shader\VertexShader_15.shader" />
     <None Include="Assets\CGInclude\CGInclude.cginc" />
     <None Include="Assets\Shader\VertexShader_02.shader" />
     <None Include="Assets\Shader\FixedFunctionShader_02.shader" />

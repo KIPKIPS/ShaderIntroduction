@@ -89,6 +89,7 @@
     <None Include="Assets\Shader\SurfaceShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_09.shader" />
     <None Include="Assets\Shader\Disappear.shader" />
+    <None Include="Assets\Shader\FragmentShader_04.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity_WorkStation/ShaderStudy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

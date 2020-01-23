@@ -14,6 +14,7 @@ Shader "Shader/FragmentShader_03"
         //着色通道
         Pass{
         	blend srcalpha oneminussrcalpha
+            zwrite off//关闭写入深度
             CGPROGRAM
             #include "UnityCG.cginc"
             #pragma vertex Vert

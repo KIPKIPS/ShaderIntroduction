@@ -69,6 +69,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Range: 3.35
+    - _Scale: 3
     - _Shininess: 17.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

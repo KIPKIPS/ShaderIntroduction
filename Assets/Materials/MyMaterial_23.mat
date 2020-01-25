@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MyMaterial_22
-  m_Shader: {fileID: 4800000, guid: ff2a85ef56dfb4f46af07bcb6b2fcc60, type: 3}
+  m_Name: MyMaterial_23
+  m_Shader: {fileID: 4800000, guid: eeaaed8a5fd72ce41bcc60de383acc48, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -70,7 +70,7 @@ Material:
     - _Outer: 0.074
     - _Parallax: 0.02
     - _Range: 3.35
-    - _Scale: 1
+    - _Scale: -0.5
     - _Shininess: 17.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -82,5 +82,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 1, g: 0, b: 0, a: 1}
+    - _SecondColor: {r: 0.04830408, g: 1, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 0, b: 0, a: 1}

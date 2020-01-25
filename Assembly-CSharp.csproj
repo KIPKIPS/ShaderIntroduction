@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MVPTransform.cs" />
+    <Compile Include="Assets\Scripts\ScaleManager.cs" />
     <Compile Include="Assets\Scripts\SetFloat.cs" />
     <Compile Include="Assets\Scripts\Uniform.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
@@ -83,6 +84,7 @@
     <None Include="Assets\Shader\FragmentShader_02.shader" />
     <None Include="Assets\Shader\VertexShader_05.shader" />
     <None Include="Assets\Shader\VertexShader_13.shader" />
+    <None Include="Assets\Shader\FragmentShader_05.shader" />
     <None Include="Assets\Shader\FixedFunctionShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_14.shader" />
     <None Include="Assets\Shader\VertexShader_04.shader" />

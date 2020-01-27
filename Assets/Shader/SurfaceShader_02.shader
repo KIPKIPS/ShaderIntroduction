@@ -31,6 +31,7 @@
 
         half _Glossiness;
         half _Metallic;
+        //自定义变量
         float4 _MainColor;
         float4 _SecondColor;
         uniform float _Scale;

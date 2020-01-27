@@ -82,6 +82,7 @@
     <None Include="Assets\Shader\FixedFunctionShader_02.shader" />
     <None Include="Assets\Shader\VertexShader_06.shader" />
     <None Include="Assets\Shader\FragmentShader_02.shader" />
+    <None Include="Assets\Shader\SurfaceShader_02.shader" />
     <None Include="Assets\Shader\VertexShader_05.shader" />
     <None Include="Assets\Shader\VertexShader_13.shader" />
     <None Include="Assets\Shader\FragmentShader_05.shader" />
@@ -89,6 +90,7 @@
     <None Include="Assets\Shader\VertexShader_14.shader" />
     <None Include="Assets\Shader\VertexShader_04.shader" />
     <None Include="Assets\Shader\SurfaceShader_01.shader" />
+    <None Include="Assets\Shader\FragmentShader_06.shader" />
     <None Include="Assets\Shader\VertexShader_09.shader" />
     <None Include="Assets\Shader\Disappear.shader" />
     <None Include="Assets\Shader\FragmentShader_04.shader" />

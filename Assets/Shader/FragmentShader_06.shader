@@ -1,4 +1,5 @@
-﻿Shader "Shader/FragmentShader_06"
+﻿//UV学习Shader
+Shader "Shader/FragmentShader_06"
 {
     Properties{
         _MainTex("MainTex",2D)=""{}
@@ -15,13 +16,13 @@
             #pragma fragment Frag 
 
             sampler2D _MainTex;
-            float4 _MainTex_ST;//一旦声明Unity会自动将tiling和offset的值传递进来
+            float4 _MainTex_ST;//一旦声明Unity会自动将tiling和offset的值传递进来 前两个值描述平铺量,后两个描述偏移量
             //float _U;
             //float _V;
-            float tiling_x=1;
-            float tiling_y=1;
-            float offset_x=0;
-            float offset_y=0;
+            // float tiling_x=1;
+            // float tiling_y=1;
+            // float offset_x=0;
+            // float offset_y=0;
 
 
             //通信结构体
@@ -38,7 +39,8 @@
                 // vtf.uv.y*=tiling_y;
                 // vtf.uv.x+=offset_x;
                 // vtf.uv.y+=offset_y;
-                vtf.uv=v.texcoord.xy*_MainTex_ST.xy+_MainTex_ST.zw;
+                //vtf.uv=v.texcoord.xy*_MainTex_ST.xy+_MainTex_ST.zw;//可以用宏来代替这个计算
+                vtf.uv=TRANSFORM_TEX(v.texcoord.xy,_MainTex);
                 return vtf;
             }
             //片元着色器

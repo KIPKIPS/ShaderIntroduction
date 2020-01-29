@@ -1,4 +1,5 @@
-﻿Shader "Shader/FragmentShader_05"
+﻿//颜色过渡Shader
+Shader "Shader/FragmentShader_05"
 {
     Properties{
         _MainColor("MainColor",Color)=(0,1,0,1)

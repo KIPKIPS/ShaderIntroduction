@@ -90,6 +90,7 @@
     <None Include="Assets\Shader\FixedFunctionShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_14.shader" />
     <None Include="Assets\Shader\VertexShader_04.shader" />
+    <None Include="Assets\Shader\FragmentShader_07.shader" />
     <None Include="Assets\Shader\SurfaceShader_01.shader" />
     <None Include="Assets\Shader\FragmentShader_06.shader" />
     <None Include="Assets\Shader\VertexShader_09.shader" />

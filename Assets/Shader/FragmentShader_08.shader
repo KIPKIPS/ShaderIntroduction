@@ -15,7 +15,6 @@ Shader "Shader/FragmentShader_08"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION; 

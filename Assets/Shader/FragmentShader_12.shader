@@ -7,6 +7,7 @@ Shader "Shader/FragmentShader_12"
         _MainTex("MainTex",2D)=""{}
         _F("F",range(1,10))=1
         _Speed("Speed",range(-10,100))=5
+        _SecondTex("SecondTex",2D)=""{}
     }
     
     SubShader
@@ -21,6 +22,7 @@ Shader "Shader/FragmentShader_12"
             float4 _MainTex_ST;
             float _F;
             float _Speed;
+            sampler2D _SecondTex;
             //通信结构体
             struct VertToFrag{
                 float4 pos:POSITION; 
@@ -36,15 +38,23 @@ Shader "Shader/FragmentShader_12"
             }
             //片元着色器
             float4 Frag(VertToFrag IN):COLOR{
-                float2 uv=IN.uv;
-                float offset_uv=0.05*sin(IN.uv*_F+_Time.x*_Speed);//-1到1的值,使uv不断的变化
-                uv+=offset_uv;
-                float4 color_1=tex2D(_MainTex,uv);
+            	float4 mainColor=tex2D(_MainTex,IN.uv);
 
-                uv=IN.uv;
-                uv-=offset_uv;
-                float4 color_2=tex2D(_MainTex,uv);
-                return 0.5*(color_1+color_2);
+            	float offset_uv=0.05*sin(IN.uv*_F+_Time.x*_Speed);//-1到1的值,使uv不断的变化
+                float2 uv=offset_uv+IN.uv;
+                float4 color_1=tex2D(_SecondTex,uv);
+
+                mainColor*=color_1;
+            	return mainColor;
+                // float2 uv=IN.uv;
+                // float offset_uv=0.05*sin(IN.uv*_F+_Time.x*_Speed);//-1到1的值,使uv不断的变化
+                // uv+=offset_uv;
+                // float4 color_1=tex2D(_MainTex,uv);
+
+                // uv=IN.uv;
+                // uv-=offset_uv;
+                // float4 color_2=tex2D(_MainTex,uv);
+                // return 0.5*(color_1+color_2);
             }
             ENDCG
         }

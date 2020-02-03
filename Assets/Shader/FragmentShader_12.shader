@@ -13,6 +13,7 @@ Shader "Shader/FragmentShader_12"
     SubShader
     {
         Pass{
+        	colormask rg//只允许R(红色绿色分量)的颜色值显示
             CGPROGRAM
             #include "UnityCG.cginc"
             #pragma vertex Vert
@@ -44,7 +45,14 @@ Shader "Shader/FragmentShader_12"
                 float2 uv=offset_uv+IN.uv;
                 float4 color_1=tex2D(_SecondTex,uv);
 
-                mainColor*=color_1;
+                mainColor*=color_1.b;//将颜色叠加
+                mainColor.rgb*=2;//将图片变亮
+
+                uv=IN.uv-offset_uv;
+                float4 color_2=tex2D(_SecondTex,uv);
+                mainColor*=color_2.b;
+                mainColor.rgb*=4;//将图片变亮
+
             	return mainColor;
                 // float2 uv=IN.uv;
                 // float offset_uv=0.05*sin(IN.uv*_F+_Time.x*_Speed);//-1到1的值,使uv不断的变化

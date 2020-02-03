@@ -36,8 +36,9 @@ Shader "Shader/FragmentShader_09"
             //片元着色器
             float4 Frag(VertToFrag IN):COLOR{
                 //IN.uv+=_Time.x;
-                //模拟水波
-                //IN.uv+=sin(IN.uv*3.14*_Amplitude+_Time.y)*_Frequency;
+                //水波
+                IN.uv+=sin(IN.uv*3.14*_Amplitude+_Time.y)*_Frequency;
+                //圆形涟漪
                 float2 uv=IN.uv;
                 float dis=distance(float2(0.5,0.5),uv);//计算uv坐标到点击坐标的距离
                 float scale=0;

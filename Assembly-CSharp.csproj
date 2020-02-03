@@ -81,6 +81,7 @@
     <None Include="Assets\Shader\FragmentShader_03.shader" />
     <None Include="Assets\CGInclude\CGInclude.cginc" />
     <None Include="Assets\Shader\VertexShader_02.shader" />
+    <None Include="Assets\Shader\FragmentShader_09.shader" />
     <None Include="Assets\Shader\FixedFunctionShader_02.shader" />
     <None Include="Assets\Shader\VertexShader_06.shader" />
     <None Include="Assets\Shader\FragmentShader_02.shader" />

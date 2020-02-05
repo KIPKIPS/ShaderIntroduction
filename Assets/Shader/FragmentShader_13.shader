@@ -5,10 +5,10 @@ Shader "Shader/FragmentShader_13"
 {
     SubShader
     {
-    	Tags { "queue"="transparent" }
+    	Tags { "queue"="transparent" "rendertype"="transparent"}
         Pass{
         	blend srcalpha oneminussrcalpha
-        	ZWrite off 
+        	ZWrite off
 
             CGPROGRAM
             #include "UnityCG.cginc"

@@ -10,7 +10,7 @@ Shader "Shader/FragmentShader_14"
     {
         Tags { "queue"="transparent" }
         Pass{
-        	Blend   SrcAlpha oneminussrcalpha
+        	Blend SrcAlpha oneminussrcalpha
             ZWrite off 
             CGPROGRAM
             #include "UnityCG.cginc"

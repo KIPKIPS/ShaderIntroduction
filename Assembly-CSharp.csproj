@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MVPTransform.cs" />
+    <Compile Include="Assets\Scripts\ReplaceShader.cs" />
     <Compile Include="Assets\Scripts\ScaleManager.cs" />
     <Compile Include="Assets\Scripts\SetFloat.cs" />
     <Compile Include="Assets\Scripts\SetTexture.cs" />
@@ -77,6 +78,7 @@
     <None Include="Assets\Shader\VertexShader_01.shader" />
     <None Include="Assets\Shader\VertexShader_03.shader" />
     <None Include="Assets\Shader\VertexShader_07.shader" />
+    <None Include="Assets\Shader\FragmentShader_15.shader" />
     <None Include="Assets\Shader\VertexShader_15.shader" />
     <None Include="Assets\Shader\FragmentShader_03.shader" />
     <None Include="Assets\CGInclude\CGInclude.cginc" />
@@ -96,6 +98,7 @@
     <None Include="Assets\Shader\VertexShader_04.shader" />
     <None Include="Assets\Shader\FragmentShader_07.shader" />
     <None Include="Assets\Shader\FragmentShader_11.shader" />
+    <None Include="Assets\Shader\FragmentShader_13_Replacement.shader" />
     <None Include="Assets\Shader\SurfaceShader_01.shader" />
     <None Include="Assets\Shader\FragmentShader_06.shader" />
     <None Include="Assets\Shader\VertexShader_09.shader" />

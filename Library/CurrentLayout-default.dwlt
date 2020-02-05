@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 422}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 909, y: 372}
-  m_MaxSize: {x: 22004, y: 14022}
+  m_MinSize: {x: 917, y: 394}
+  m_MaxSize: {x: 22012, y: 14044}
   vertical: 0
-  controlID: 51
+  controlID: 126
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 923
     height: 731
-  m_MinSize: {x: 434, y: 372}
-  m_MaxSize: {x: 14004, y: 14022}
+  m_MinSize: {x: 438, y: 394}
+  m_MaxSize: {x: 14008, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 104
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 923
     height: 410
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 122}
+  m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 410
     width: 923
     height: 321
-  m_MinSize: {x: 434, y: 272}
-  m_MaxSize: {x: 14004, y: 10022}
+  m_MinSize: {x: 438, y: 272}
+  m_MaxSize: {x: 14008, y: 10022}
   vertical: 0
   controlID: 105
 --- !u!114 &10
@@ -411,9 +411,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e43d0000
-      m_LastClickedID: 15844
-      m_ExpandedIDs: 76fbffff
+      m_SelectedIDs: f8010000
+      m_LastClickedID: 0
+      m_ExpandedIDs: f6f8ffffe8f9ffff3afaffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.10376641, y: 1.2003794, z: 2.7809143}
+    m_Target: {x: 0.3381476, y: 0.7915143, z: 0.47716162}
     speed: 2
-    m_Value: {x: 0.10376641, y: 1.2003794, z: 2.7809143}
+    m_Value: {x: 0.3381476, y: 0.7915143, z: 0.47716162}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -568,13 +568,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.0048045926, y: 0.0028218313, z: 0.00067521865, w: -1.0001055}
+    m_Target: {x: 0.1069674, y: 0.7931371, z: -0.14725897, w: 0.58143836}
     speed: 2
-    m_Value: {x: -0.00480401, y: 0.0028214892, z: 0.0006751368, w: -0.99998426}
+    m_Value: {x: 0.10651107, y: 0.7947728, z: -0.14755972, w: 0.57897985}
   m_Size:
-    m_Target: 18.609024
+    m_Target: 2.9665723
     speed: 2
-    m_Value: 18.609024
+    m_Value: 2.6665723
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -664,7 +664,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Shader
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
@@ -676,7 +677,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 00000000823400003835000028360000503900009e390000de390000c23c00002c3e0000
+    m_ExpandedIDs: 0000000082340000383500002836000052390000a0390000e0390000c43c00002e3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -701,21 +702,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 1383}
+    scrollPos: {x: 0, y: 1343}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000823400003835000028360000503900009e390000de390000c23c00002c3e0000
+    m_ExpandedIDs: ffffffff0000000082340000383500002836000052390000a0390000e0390000c43c00002e3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: arealine
-      m_OriginalName: arealine
+      m_Name: VertexShader_14
+      m_OriginalName: VertexShader_14
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15928
+      m_UserData: 504
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

@@ -86,6 +86,7 @@
     <None Include="Assets\Shader\VertexShader_06.shader" />
     <None Include="Assets\Shader\FragmentShader_02.shader" />
     <None Include="Assets\Shader\SurfaceShader_02.shader" />
+    <None Include="Assets\Shader\FragmentShader_14.shader" />
     <None Include="Assets\Shader\VertexShader_05.shader" />
     <None Include="Assets\Shader\VertexShader_13.shader" />
     <None Include="Assets\Shader\FragmentShader_05.shader" />
@@ -102,6 +103,7 @@
     <None Include="Assets\Shader\Disappear.shader" />
     <None Include="Assets\Shader\FragmentShader_12.shader" />
     <None Include="Assets\Shader\FragmentShader_04.shader" />
+    <None Include="Assets\Shader\FragmentShader_13.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity_WorkStation/ShaderStudy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
